@@ -1,10 +1,13 @@
-import Header from "../../components/header/Header"
+import { useAuth } from "../../hooks/useAuth";
 
 const HopePage = () => {
+    const { auth } = useAuth()
+
     return (
         <div>
-            <Header />
             Home Page
+            <br />
+            {auth?.user?.firstName}
         </div>
     )
 }
