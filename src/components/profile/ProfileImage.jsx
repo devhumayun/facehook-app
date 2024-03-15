@@ -48,12 +48,23 @@ const ProfileImage = () => {
         <div
             className="relative mb-8 max-h-[180px] max-w-[180px] lg:mb-11 lg:max-h-[218px] lg:max-w-[218px]"
         >
-            <img
-                className="h-[200px] w-[200px] rounded-full object-cover"
-                src={`${import.meta.env.VITE_SERVER_BASE_URL}/${state?.user?.avatar
-                    }`}
-                alt={state?.user?.firstName}
-            />
+            {
+                state?.user?.avatar ? (
+                    <img
+                        className="h-[200px] w-[200px] rounded-full object-cover"
+                        src={`${import.meta.env.VITE_SERVER_BASE_URL}/${state?.user?.avatar
+                            }`}
+                        alt={state?.user?.firstName}
+                    />
+                ) : (
+                    <img
+                        className="h-[200px] w-[200px] rounded-full object-cover"
+                        src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png"
+                        alt={state?.user?.firstName}
+                    />
+                )
+            }
+
 
             <form action="">
                 <button

@@ -60,9 +60,20 @@
             "name": "Saad Hasan",
             "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
           }
+        },
+        {
+          "id": "b74f40b9-6567-4c57-9a85-37a4099caf0b",
+          "comment": "Nice",
+          "createdAt": "2024-03-03T10:10:14.262Z",
+          "author": {
+            "id": "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d",
+            "name": "MD Humayun Kabir",
+            "avatar": null
+          }
         }
       ],
       "likes": [
+        "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d",
         "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
       ],
       "createAt": "2024-02-24T12:17:09.169Z"
@@ -184,12 +195,24 @@
             "name": "Saad Hasan",
             "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
           }
+        },
+        {
+          "id": "c434311b-2357-403c-a64c-e2f480ac7565",
+          "comment": "Many Many happy returns of the day",
+          "createdAt": "2024-03-03T10:09:18.147Z",
+          "author": {
+            "id": "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d",
+            "name": "MD Humayun Kabir",
+            "avatar": null
+          }
         }
       ],
       "likes": [
         "ea168626-058e-49dd-b23c-3000e7bd0172",
         "8fc0f0d6-396a-4ef4-922b-27ef5b4e8526",
-        "1aeef0f0-77ba-456b-8b5b-d4145a9b5410"
+        "1aeef0f0-77ba-456b-8b5b-d4145a9b5410",
+        "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d",
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
       ],
       "createAt": "2024-02-09T12:19:50.876Z"
     },
@@ -235,7 +258,9 @@
         "avatar": "uploads/avatar/avatar-1708770640883-148182382.png"
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d"
+      ],
       "createAt": "2024-02-24T12:29:59.028Z"
     },
     {
@@ -249,7 +274,9 @@
         "avatar": "uploads/avatar/avatar-1708770640883-148182382.png"
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d"
+      ],
       "createAt": "2024-02-24T12:31:17.794Z"
     },
     {
@@ -333,7 +360,9 @@
         "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "6fd3ed42-2275-4d5f-a436-e5a3bf586c56"
+      ],
       "createAt": "2024-02-25T06:36:33.889Z"
     },
     {
@@ -458,7 +487,9 @@
         "avatar": "uploads/avatar/avatar-1708789609571-36760872.jpeg"
       },
       "comments": [],
-      "likes": [],
+      "likes": [
+        "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d"
+      ],
       "createAt": "2024-02-25T07:16:53.349Z"
     }
   ],
@@ -469,7 +500,7 @@
       "password": "$2b$08$t5Aar/0hgHTMdCeLtn3KhOlWDVIAHcFUTkRPeWASPhbYAea5kxKvW",
       "firstName": "Saad",
       "lastName": "Hasan",
-      "avatar": "uploads/avatar/avatar-1709316804064-506190607.png",
+      "avatar": "uploads/avatar/avatar-1710090630201-211631151.png",
       "email": "saadh392@mail.com",
       "bio": "Saad is an excellent member of LWS who keeps himself updated with technology and stays relevant. He is a tech enthusiast and does not hesitate to help developers in need. I'm humayun"
     },
@@ -514,6 +545,15 @@
       "avatar": "uploads/avatar/avatar-1708802845791-219561000.png",
       "email": "rambo@email.com",
       "bio": "I am Rambo!!!"
+    },
+    {
+      "id": "7ffbcc2b-e606-4e6e-a3e6-3517cb84e62d",
+      "password": "$2b$08$HwK6Sv1U0V9hGlZ5x48fhuCcLWKcXz/XVmVV69mgL2Sz6sv2s.UTa",
+      "firstName": "MD Humayun",
+      "lastName": "Kabir",
+      "avatar": null,
+      "email": "h@gmail.com",
+      "bio": "Hello world!"
     }
   ]
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-catch */
 import axios from "axios";
 import { useEffect } from "react";
 import { api } from "../api";
@@ -55,7 +56,7 @@ const useAxios = () => {
       api.interceptors.request.eject(requestIntercept);
       api.interceptors.response.eject(responseIntercept);
     };
-  }, [auth.authToken]);
+  }, [auth.authToken, auth, setAuth]);
 
   return { api };
 };

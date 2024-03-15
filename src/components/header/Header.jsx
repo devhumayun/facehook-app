@@ -32,13 +32,48 @@ const Header = () => {
                     <Logout />
                     <button className="flex-center !ml-8 gap-3">
                         <Link to="/me" className='flex justify-center items-center gap-2'>
-                            <span className="text-lg font-medium lg:text-xl">{user?.firstName} {user?.lastName}</span>
-                            <img
+                            <span className="text-lg font-medium lg:text-xl text-white">{user?.firstName}</span>
+
+                            {/* <img
                                 className="w-[40px] h-[40px] rounded-full object-cover"
-                                src={`${import.meta.env.VITE_SERVER_BASE_URL}/${user?.avatar
-                                    }`}
+                                src={user?.avatar ? `${import.meta.env.VITE_SERVER_BASE_URL}/${user?.avatar
+                                    }` : <RandomAvatar name={user?.firstName} />}
                                 alt="avatar"
-                            />
+                            /> */}
+
+                            {
+                                user?.avatar ? (
+                                    <img
+                                        className="w-[40px] h-[40px] rounded-full object-cover"
+                                        src={`${import.meta.env.VITE_SERVER_BASE_URL}/${user?.avatar
+                                            }`}
+                                        alt="avatar"
+                                    />
+                                ) : (
+                                    <>
+                                        <img
+                                            className="w-[40px] h-[40px] rounded-full object-cover"
+                                            src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png"
+                                            alt="avatar"
+                                        />
+                                    </>
+                                )
+                            }
+
+                            {/* {
+                                user?.avatar ? (
+                                    <img
+                                        className="w-[40px] h-[40px] rounded-full object-cover"
+                                        src={`${import.meta.env.VITE_SERVER_BASE_URL}/${user?.avatar
+                                            }`}
+                                        alt="avatar"
+                                    />
+                                ) : (
+                                    <>
+                                        <RandomAvatar name={user?.firstName} />
+                                    </>
+                                )
+                            } */}
                         </Link>
                     </button>
                 </div>
